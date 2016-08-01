@@ -127,14 +127,14 @@ def findSchemeForEachSet(SetsSchemesFileName):
 
     output is like this:
     {
-     (7, 1) : '8c',
+     "Year 7 Set 1" : '8c',
      }
 
      to mean that year 7 set 1 will be folliwng the "8c" scheme
     """
     sets_to_schemes = {}
     for entry in csv.DictReader(open(SetsSchemesFileName)):
-        sets_to_schemes[ (entry['teach_year'], entry['teach_set']) ] = entry['scheme_id']
+        sets_to_schemes[ entry['teaching_group'] ] = entry['scheme_id']
     return sets_to_schemes
 
 
@@ -147,27 +147,26 @@ def writeSchemes(schemes = {},
     units, objectives and links"""
 
     file_titles_names = [
-        (y, g, "Y%s Set %s" % (y,g) ,"scheme_y%s_%s.html" % (y,g))
-        for (y,g) in sets_to_schemes.keys()
+        (schemetitle , "scheme_%s.html" % schemetitle.replace(" ","-").lower())
+        for schemetitle in sets_to_schemes.keys()
         ]
     file_titles_names.sort()
 
     # step through each teaching class
-    for (year, group, title, file_name) in file_titles_names:
-        sid = sets_to_schemes[ (year, group) ]
+    for (scheme_title, file_name) in file_titles_names:
+        sid = sets_to_schemes[scheme_title]
         units = schemes.get(sid, None)
         if units:
-            loginfo("Found scheme %s for Year %s, Set %s" % (sid, year, group))
+            loginfo("Found scheme %s for %s" % (sid, scheme_title))
             writeScheme(
                 units = units,
-                year = year,
-                group = group,
+                scheme_title = scheme_title,
                 out_file_name = os.path.join(".", "scheme", file_name),
                 all_file_titles_names = file_titles_names,
                 sid = sid
                 )
         else:
-            loginfo("No scheme for Year %s, Set %s" % (year, group))
+            loginfo("No scheme found for %s" % scheme_title)
     writeIndex(all_file_titles_names = file_titles_names, sets_to_schemes = sets_to_schemes)
 
 
@@ -182,8 +181,8 @@ def writeIndex(all_file_titles_names = [], sets_to_schemes = {}):
                                'cardsname' : f.replace("scheme_", "cards_"),
                                'bookletname' : f.replace("scheme_", "booklet_"),
                                'selected' : '',
-                               'sid' : sets_to_schemes.get( (y,g) , "" ), }
-                              for (y,g,t,f) in all_file_titles_names]
+                               'sid' : sets_to_schemes.get( t , "" ), }
+                              for (t,f) in all_file_titles_names]
 
     context = simpleTALES.Context(allowPythonPath = 1)
     for (k, v) in glob.items():
@@ -199,8 +198,7 @@ def writeIndex(all_file_titles_names = [], sets_to_schemes = {}):
 
 
 def writeScheme(units = [],
-                year = None,
-                group = None,
+                scheme_title = None,
                 out_file_name = None,
                 all_file_titles_names = [],
                 sid = None
@@ -211,13 +209,11 @@ def writeScheme(units = [],
     # all the variables for the template will go in here
     glob = {}
 
-    glob['scheme_title'] = "Scheme of Work for Year %s, Set %s (%s)" % (year, group, sid)
-    glob['year'] = year
-    glob['group'] = group
+    glob['scheme_title'] = scheme_title
     glob['other_schemes'] = [ {'title' : t,
                                'filename' : f,
-                               'selected' : y==year and g==group and 'selected' or '' }
-                              for (y,g,t,f) in all_file_titles_names]
+                               'selected' : t==scheme_title and 'selected' or '' }
+                              for (t,f) in all_file_titles_names]
 
     half_terms = []
     for ht in csv.DictReader(open("config/HalfTerms.csv")):
