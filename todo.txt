@@ -1,0 +1,29 @@
+o configure some tests (and projects) to go with the units, display
+  and link to them in the scheme
+
+  x complete the Y7 (E,C,S 8) test config
+
+  x find and put in tests for the camess 9 schemes, as well as the
+    tests from last year for the other schemes
+
+  - link up the test / project files / directories - let's look in
+    those directories to see if there's anything there, then display a
+    link to that directory
+
+o construct the take-home cards
+
+  - fix print styling
+
+  - make into pdfs, linked from the scheme
+
+- make parent-version, without the test links in there !!!
+
+- make the question-by-question analysis booklets
+
+- make a print.css to allow pretty printing
+
+- add FAQs and explains HOW TO CONTRIBUTE to the scheme, and HOW to
+  manage / update it, in other words some documentation!!
+
+x an index.html which launches people into the different schemes,
+
