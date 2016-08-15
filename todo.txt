@@ -1,3 +1,9 @@
+- fix the set markers (broken now that we've done away with set number
+  and year number, replaced with titles)
+
+- add FAQs and explains HOW TO CONTRIBUTE to the scheme, and HOW to
+  manage / update it, in other words some documentation!!
+
 o configure some tests (and projects) to go with the units, display
   and link to them in the scheme
 
@@ -16,14 +22,11 @@ o construct the take-home cards
 
   - make into pdfs, linked from the scheme
 
-- make parent-version, without the test links in there !!!
+x make parent-version, without the test links in there !!!
 
-- make the question-by-question analysis booklets
+x make the question-by-question analysis booklets
 
-- make a print.css to allow pretty printing
-
-- add FAQs and explains HOW TO CONTRIBUTE to the scheme, and HOW to
-  manage / update it, in other words some documentation!!
+x make a print.css to allow pretty printing
 
 x an index.html which launches people into the different schemes,
 
