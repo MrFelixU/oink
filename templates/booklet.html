@@ -3,7 +3,7 @@
 
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <title tal:content="string:Maths Assessment Booklet for Year ${year}, Set ${group}"
+    <title tal:content="string:Maths Assessment Booklet for ${scheme_title}"
 	   >Maths Assessment Booklet</title>
 
     <style type="text/css" media="print">
@@ -188,12 +188,7 @@
 	<h2>Maths Assessment Through the Year</h2>
       </div>
 
-      <h1 tal:content="year">Year 7</h1>
-      <div class="setlogos">
-	<img tal:repeat="i python:range(0,int(group))"
-	     src="graphics/mm-48.png" />
-      </div>
-
+      <h1 tal:content="scheme_title">Year 7</h1>
 
       <div class="coverlabel"><span class="label">Name:</span><br clear="all" /></div>
       <div class="coverlabel"><span class="label">Group:</span><br clear="all" /></div>

@@ -16,11 +16,13 @@ o configure some tests (and projects) to go with the units, display
     those directories to see if there's anything there, then display a
     link to that directory
 
-o construct the take-home cards
+- try out some other schemes, e.g. a KS4 or KS5 one as proof of concept
 
-  - fix print styling
+x construct the take-home cards
 
-  - make into pdfs, linked from the scheme
+  x fix print styling
+
+  x make into pdfs, linked from the scheme
 
 x make parent-version, without the test links in there !!!
 

@@ -147,7 +147,7 @@ def writeSchemes(schemes = {},
     units, objectives and links"""
 
     file_titles_names = [
-        (schemetitle , "scheme_%s.html" % schemetitle.replace(" ","-").lower())
+        (schemetitle , "scheme-%s.html" % schemetitle.replace(" ","-").lower())
         for schemetitle in sets_to_schemes.keys()
         ]
     file_titles_names.sort()
@@ -178,8 +178,8 @@ def writeIndex(all_file_titles_names = [], sets_to_schemes = {}):
 
     glob['other_schemes'] = [ {'title' : t,
                                'filename' : f,
-                               'cardsname' : f.replace("scheme_", "cards_"),
-                               'bookletname' : f.replace("scheme_", "booklet_"),
+                               'cardsname' : f.replace("scheme-", "cards-"),
+                               'bookletname' : f.replace("scheme-", "booklet-"),
                                'selected' : '',
                                'sid' : sets_to_schemes.get( t , "" ), }
                               for (t,f) in all_file_titles_names]
@@ -243,7 +243,7 @@ def writeScheme(units = [],
     template_file = open("templates/cards.html")
     template = simpleTAL.compileHTMLTemplate(template_file)
     template_file.close()
-    cards_filename = out_file_name.replace("scheme_", "cards_")
+    cards_filename = out_file_name.replace("scheme-", "cards-")
     cards_file = open(cards_filename, 'w')
     template.expand(context, cards_file , outputEncoding="utf-8")
     cards_file.close()
@@ -251,7 +251,7 @@ def writeScheme(units = [],
     template_file = open("templates/booklet.html")
     template = simpleTAL.compileHTMLTemplate(template_file)
     template_file.close()
-    cards_filename = out_file_name.replace("scheme_", "booklet_")
+    cards_filename = out_file_name.replace("scheme-", "booklet-")
     cards_file = open(cards_filename, 'w')
     template.expand(context, cards_file , outputEncoding="utf-8")
     cards_file.close()
