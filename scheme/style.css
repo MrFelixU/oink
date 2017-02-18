@@ -1,5 +1,5 @@
 body.scheme
-{ 
+{
   font-family: sans-serif;
   background: #fff;
   border-style: solid;
@@ -10,7 +10,7 @@ body.scheme
  }
 
 a:hover
-{ 
+{
   text-decoration: underline;
   }
 
@@ -19,20 +19,20 @@ a:hover
 /* ********** The Index Page ************** */
 
 
-body.index 
-{ 
-  font-size: 250%;
+body.index
+{
+  font-size: 150%;
   font-family: serif;
  }
 
 body.index h1
-{ 
+{
   text-align: center;
  }
 
 
 body.index ul li
-{ 
+{
   list-style: none;
   margin: 0.5ex auto;
   text-align: center;
@@ -43,25 +43,33 @@ body.index ul li
  }
 
 body.index ul a
-{ 
+{
   text-decoration: none;
   font-weight: bold;
  }
 
 body.index ul a:hover
-{ 
+{
   text-decoration: underline;
  }
 
 
 a.discreet
-{ 
+{
   font-size: 50%;
   color: #666;
  }
 
+a.schemelink {
+  margin: 0em 1ex;
+  min-height: 50px;
+  padding-left: 50px;
+  background-image: url('graphics/scheme-icon-48.png');
+  background-repeat: no-repeat;
+}
+
 a.cardslink
-{ 
+{
   margin: 0em 1ex;
   min-height: 50px;
   padding-left: 50px;
@@ -70,7 +78,7 @@ a.cardslink
  }
 
 a.bookletlink
-{ 
+{
   margin: 0em 1ex;
   min-height: 50px;
   padding-left: 50px;
@@ -80,7 +88,7 @@ a.bookletlink
 
 
 ul.other_schemes
-{ 
+{
   position: fixed;
   top: 1em;
   right: 1em;
@@ -93,37 +101,37 @@ ul.other_schemes
  }
 
 ul.other_schemes a:hover
-{ 
+{
   text-decoration: underline;
   }
 
 
-ul.other_schemes a, 
-ul.other_schemes a:visited 
+ul.other_schemes a,
+ul.other_schemes a:visited
 {
   font-weight: bold;
   text-decoration: none;
   color: #009;
   padding: 0ex 1ex;
-  }  
+  }
 
 
 ul.other_schemes a.selected
 {
   color: #a00;
   font-weight: bold;
-}  
+}
 
 
 
 ul.other_schemes li
-{ 
+{
   display: block;
   margin: 1em auto;
  }
 
 
-.halfterm h2 { 
+.halfterm h2 {
 color: #666;
 text-shadow: 0.1ex 0.1ex #333;
  }
@@ -136,53 +144,53 @@ font-size: 80%;
 
 /* **************
 
-The details table 
+The details table
 
 ************** */
 
-table { 
+table {
   border-collapse: collapse;
   }
 
 .halfterm table.scheme
-{ 
+{
   width: 98%;
   margin: 1em auto 4em auto;
   background: #fff;
   }
 
 table.scheme th
-{ 
+{
 text-transform: capitalize;
  }
 
 table.scheme td,
 table.scheme th
-{ 
+{
   border: 0ex;
   padding: 0.4ex;
   vertical-align: top;
   }
 
 table.scheme tr
-{ 
+{
   border-width: 0px 0px 1px 0px;
   border-style: solid;
   border-color: #ccc;
  }
 
 table.scheme h3
-{ 
+{
   margin: 0em;
  }
 
 tr.type_assess td
-{ 
+{
   background: #fdd;
  }
 
 table.scheme h3.unit_id
-{ 
+{
   float: right;
   margin: 0.5ex;
   background: #666;
@@ -193,33 +201,33 @@ table.scheme h3.unit_id
  }
 
 .keyword
-{ 
+{
   margin: 0em 1em 0em 0em;
   color: #363;
  }
 
 table.scheme ul
-{ 
+{
   margin: 0em;
   padding: 0em 0em 0em 2ex;
  }
 
 table.scheme li
-{ 
-  margin: 0.5ex 0ex;
+{
+  margin: 0.2ex 0ex;
   padding: 0em;
   list-style: square;
  }
 
 table.scheme .links a
-{ 
+{
   text-decoration: none;
   font-weight: bold;
   margin-right: 1ex;
  }
 
 table.scheme .links a:hover
-{ 
+{
   text-decoration: underline;
  }
 
@@ -228,18 +236,18 @@ table.scheme .links a:hover
 /* ************ CURRICULUM CARDS ***************** */
 
 .cards h1
-{ 
+{
   page-break-after: always;
  }
 
 .cards h2
-{ 
+{
 margin: 0.2ex 0ex;
  }
 
 
 .cards h3
-{ 
+{
 margin: 0;
  }
 
@@ -255,18 +263,18 @@ margin: 0;
 
 
 table.card th
-{ 
+{
   border-bottom: 0.2ex solid #999;
   }
 
 .cards table.card
-{ 
+{
   width: 99%;
   margin: 1em auto;
  }
 
 .cards .qno
-{ 
+{
   width: 2em;
   margin: 0ex auto;
   text-align: right;
@@ -274,29 +282,28 @@ table.card th
  }
 
 .cards th,
-.cards td 
-{ 
-  
+.cards td
+{
+
 vertical-align: top;
 border-collapse: collapse;
  }
 
 .cards ul
-{ 
+{
   padding: 0ex 0ex 0ex 3ex;
   margin: 0ex;
  }
 
-.cards .cardinfo 
-{ 
+.cards .cardinfo
+{
 float: right;
  }
 
-.cardinfo img 
-{ 
+.cardinfo img
+{
   border: none;
   height: 2em;
   width: 2em;
   display: inline;
  }
-
