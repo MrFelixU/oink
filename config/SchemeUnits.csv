@@ -7,7 +7,6 @@
 "e8",2,"n2","Fractions, decimals and percentages","learn",
 "e8",2,"a2","Expressions, equations and formulae","learn",
 "e8",2,"ht2-test","Half-term Assessment","assess"
-"e8",3,"sym-proj","Symmetry Homework Project","assess",
 "e8",3,"gm2","Area, volume, 3D solids","learn",
 "e8",3,"a3","Functions, mappings and graphs","learn",
 "e8",3,"ht3-test","Half-term Assessment","assess",
@@ -31,7 +30,6 @@
 "c8",2,"n2","Fractions, decimals and percentages","learn",
 "c8",2,"a2","Expressions, equations and formulae","learn",
 "c8",2,"ht2-test","Half-term Assessment","assess",
-"c8",3,"sym-proj","Symmetry Homework Project","assess",
 "c8",3,"gm2","Area, volume, 3D solids","learn",
 "c8",3,"a3","Functions, mappings and graphs","learn",
 "c8",3,"ht3-test","Half-term Assessment","assess",
@@ -55,7 +53,6 @@
 "s8",2,"n2","Fractions, decimals and percentages","learn",
 "s8",2,"a2","Expressions, equations and formulae","learn",
 "s8",2,"ht2-test","Half-term Assessment","assess",
-"s8",3,"sym-proj","Symmetry Homework Project","assess",
 "s8",3,"gm2","Area, volume, 3D solids","learn",
 "s8",3,"a3","Functions, mappings and graphs","learn",
 "s8",3,"ht3-test","Half-term Assessment","assess",
@@ -106,7 +103,7 @@
 "c9",3,"ht3-test","Half-term Assessment","assess",
 "c9",4,"n3","Fractions, percentages and ratio","learn",
 "c9",4,"gm3","Constructions, loci and views of 3D solids","learn",
-"c9",4,"ht4-test","Half-term Assessment","assess",x"
+"c9",4,"ht4-test","Half-term Assessment","assess",
 "c9",5,"s2","Statistical investigations","learn",
 "c9",5,"n4","Written and calculator methods","learn",
 "c9",5,"year-test","End of Year Exam","assess",
@@ -127,7 +124,6 @@
 "c7",2,"ht2-test","Half-term Assessment","assess",
 "c7",3,"gm2","Shapes, angles, co-ordinates","learn",
 "c7",3,"s2","Surveys and experiments","learn",
-"c7",3,"sym-proj","Symmetry Homework Project","assess",
 "c7",3,"n3","Mental and written calculations","learn",
 "c7",3,"ht3-test","Half-term Assessment","assess",
 "c7",4,"a3","Expressions, equations, formulae","learn",
@@ -154,7 +150,6 @@
 "s7",2,"ht2-test","Half-term Assessment","assess","
 "s7",3,"GM2","Shapes, angles, co-ordinates","learn",
 "s7",3,"S2","Surveys and experiments","learn",
-"s7",3,"sym-proj","Symmetry Homework Project","assess",
 "s7",3,"N3","Mental and written calculations","learn",
 "s7",3,"ht3-test","Half-term Assessment","assess",
 "s7",4,"A3","Expressions, equations, formulae","learn",
