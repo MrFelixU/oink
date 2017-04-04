@@ -1,6 +1,3 @@
-- fix the set markers (broken now that we've done away with set number
-  and year number, replaced with titles)
-
 - add FAQs and explains HOW TO CONTRIBUTE to the scheme, and HOW to
   manage / update it, in other words some documentation!!
 
@@ -31,4 +28,7 @@ x make the question-by-question analysis booklets
 x make a print.css to allow pretty printing
 
 x an index.html which launches people into the different schemes,
+
+x fix the set markers (broken now that we've done away with set number
+  and year number, replaced with titles)
 
