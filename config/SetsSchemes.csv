@@ -1,9 +1,9 @@
-"teaching_group","scheme_id"
-"Year 7 Set 1","e8"
-"Year 7 Set 2","c8"
-"Year 7 Set 3","c7"
-"Year 7 Set 4","s7"
-"Year 8 Set 1","e9"
-"Year 8 Set 2","c9"
-"Year 8 Set 3","c8"
-"Year 8 Set 4","s8"
+teaching_group,scheme_id
+Year 7 Set 1,e8
+Year 7 Set 2,e8
+Year 7 Set 3,c7
+Year 7 Set 4,s7
+Year 8 Set 1,e9
+Year 8 Set 2,c9
+Year 8 Set 3,c8
+Year 8 Set 4,s8
